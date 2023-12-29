@@ -1,0 +1,293 @@
+html{
+    scroll-behavior: smooth !important;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+#nav{
+    position: fixed;
+    width: 100%;
+}
+#navbarNav{
+    margin-left: 60%;
+    
+    
+}
+.nav-link{
+    color: white;
+}
+#brand{
+    color: white;
+    padding: 15px 5px;
+    margin-top: 0.5%;
+}
+#brand span{
+    color: blue;
+}
+.bimg{
+    margin-left: 1%;
+}
+nav ul li a:hover
+{
+    font-size: 17px;
+     
+    transition: 0.3s;
+}
+
+.home{
+    background-image: url(dreamepic.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0px;
+    border-bottom: 1px solid white;
+}
+.mainlogo{
+    margin-left: 70%;
+    
+}
+.home h1{
+    color: white;
+    margin-left: 67%;
+    margin-top: 2%;
+    font-size: 45px;
+    
+}.home h1 span{
+    color: rgb(14, 38, 250);
+    font-weight: bold;
+}
+.home p{
+    color: rgba(189, 185, 185, 0.705);
+    margin-left: 60%;
+    text-align: center;
+}
+.home button{
+    border: none;
+    outline: none;
+    
+    padding: 10px 40px;
+    border-radius: 30px;
+    border: 3px solid rgb(12, 0, 187);
+    margin-left: 85.2%;
+    margin-top: 1%;
+    background: transparent;
+    color: white;
+    box-shadow: 1px 1px 15px 3px white;
+    
+}
+.home button:hover{
+    padding: 8px 30px;
+    margin-left: 85.6%;
+    font-size: 17px;
+    box-shadow: 1px 1px 20px 5px white;
+    background-color: rgba(36, 36, 245, 0.555);    
+    border: 3px solid rgb(0, 0, 0);
+    transition: 0.6s;
+    
+}
+
+.about{
+    background-color: rgb(0, 22, 117);
+    width: 100%;
+    height: 100%;
+    padding: 100px 0px;
+    border-bottom: 1px solid white;
+}
+
+#c1{
+    margin-left: 5%;
+    margin-top: 3%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px 5px rgb(10, 10, 10);
+    position: initial;
+}
+#c1:hover{
+    box-shadow: 1px 1px 20px 5px rgb(0, 174, 255);
+    cursor:none;
+   
+    transition: 0.6s;
+}
+
+#c2{
+    margin-left: 38%;
+    margin-top: -21.5%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px 5px rgb(10, 10, 10);
+    position: initial;
+}
+#c2:hover{
+    box-shadow: 1px 1px 20px 5px rgb(0, 174, 255);
+    cursor:none;
+    
+    transition: 0.6s;
+}
+#c3{
+    margin-left: 73%;
+    margin-top: -21.5%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px 5px rgb(10, 10, 10);
+    position: initial;
+}
+#c3:hover{
+    box-shadow: 1px 1px 20px 5px rgb(0, 174, 255);
+    cursor:none;
+    
+    transition: 0.6s;
+}
+#aname{
+    color: white;
+    margin-left: 40%;
+    margin-top: 1%;
+    
+}
+#aname span{
+    color: rgb(22, 22, 255);
+}
+
+#ap{
+    text-align: center;
+    color: rgb(172, 172, 172);
+    padding: 2%;
+}
+
+.faq{
+    width: 100%;
+    height: 100%;
+    padding: 100px 0px;
+    background-color: rgb(40, 40, 236);
+    border-bottom: 2px dotted white;
+}
+
+#faqcard{
+    border-radius: 20px;
+    margin-left: 11%;
+    margin-top: 2%;
+    box-shadow: 1px 1px 20px 5px black;
+    
+}
+.faq input{
+    padding: 10px 20px;
+    padding-right: 50px;
+    border-radius: 25px;
+    
+}
+.textarea{
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid black;
+    margin-top: 29%;
+    margin-left: 11%;
+    width: 450px;
+    height: 150px;
+    padding-right: 100px;
+}
+
+.n{
+    position: absolute;
+    margin-left: 11%;
+    margin-top: 1%;
+    
+}
+
+.e{
+    position: absolute;
+    margin-top: 13%;
+    margin-left: 11% ;
+}
+.btn1{
+    position: absolute;
+    outline: none;
+    margin-top: 45%;
+    margin-left: -16%;
+   
+    border: 2px solid rgb(0, 0, 0);
+    background:transparent;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+.btn1:hover{
+    background-color: rgba(0, 0, 255, 0.678);
+    box-shadow: 1px 1px 10px 1px black;
+    border: 2px solid white;
+    color: white;
+    transition: 0.6s;
+}
+.contact{
+    height: 143.9%;
+    width: 25%;
+    padding: 100px 0px;
+    margin-top: -46%;
+    margin-left: 75%;
+    position: initial;
+    background-color: rgb(1, 1, 95);
+}
+.contact h1{
+    color: white;
+    font-size: 28px;
+    margin-left: 5%;
+    margin-top: 8%;
+}
+.contact span{
+    color: blue;
+}
+.contact h4{
+    color: white;
+    margin-left: 15%;
+    margin-top: 15%;
+}
+.contact p {
+    color: blue;
+    margin-left: 15%;
+    font-size: 20px;
+    
+    
+}
+.per{
+    position: absolute;
+    margin-top: 3.7%;
+    margin-left: 53%;
+    color: gray;
+}
+.mail{
+    position: absolute;
+    margin-top: 15.7%;
+    margin-left: 53%;
+    color: gray;
+}
+.mail1{
+    position: absolute;
+    margin-top: 3.5%;
+    margin-left: 2%;
+    color:white;
+}
+.phone{
+    position: absolute;
+    margin-top: 3.1%;
+    margin-left: 2%;
+    color:white;
+}
+.facebook{
+
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 5%;
+    color:white;
+    
+}
+.insta{
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 10%;
+    color:white;
+}
+.twitter{
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 15%;
+    color:white;
+}
+

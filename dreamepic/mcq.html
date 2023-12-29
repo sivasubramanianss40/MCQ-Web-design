@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>instruction</title>
+<style>
+#guide
+{
+    box-shadow: 2px 2px 30px 5px rgb(14, 13, 13);
+	border: 4px solid black;
+	border-radius: 60px;
+	height:auto;
+	width:80%;
+	margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 95px;
+    background: linear-gradient(45deg,#7fb6e2,#f3f5f7,#7fb6e2,#f3f5f7);
+    background-size: 100% 100%;
+    animation:color 12s ease-in-out infinite;
+    padding-left: 50px;
+    
+    
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+button:hover
+{
+	background-color: rgba(0,0,255,0.678);
+    box-shadow: 1px 1px 10px 1px black;
+    border:2px solid white;
+    color: white;
+    transition:0.6s;
+}
+body
+{
+	background-color: rgb(116, 116, 238);
+}
+button
+{
+	
+    
+    border: 2px solid rgb(0,0,0);
+    background: transparent;
+    padding: 5px 15px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    margin-left: 700px;
+    box-shadow: 10px 3px rgb(137, 161, 170);
+
+    
+}
+a
+{
+	text-decoration: none;
+	color:rgb(11, 12, 11);
+    font-weight: 700;
+    font-size: 20px;
+	
+}
+.questions
+{
+    font-weight: 700;
+    font-size: 20px;
+    
+}
+input
+    {
+        accent-color: rgb(10, 10, 10);
+        font-size: 10px;
+    }
+    h2
+    {
+        color: rgb(34, 34, 165);
+    }
+    h3
+    {
+        color: rgb(34, 34, 165);
+    }
+    svg
+    {
+        margin-left: 950px;
+    }
+    
+#timer{
+    font-size: 25px;
+}
+	
+
+
+</style>
+
+
+
+</head>
+
+
+<body>
+    <div id="container">
+        <div id="guide">
+            <form id="mcqForm">
+            <center>
+            <br><br><h2 style="color: white; font-size: 32px;">Dream <span style="color: blue;"> Epic </span>!</h2>
+            <h1 style="margin-left: -5%;">______________________________________________________________________</h1>
+            <h3 style="font-size: 25px;">Quiz</h3>
+            </center>
+              <div class="timer">
+                <svg style="margin-left: 75%;" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                  </svg>
+                  <span id="timer" style="font-size: 35px;">00:00</span>
+                  <span style="font-size: x-large;">min</span>
+            
+
+             </div>
+            <script>
+            function startTimer(duration, display)
+                {
+                    var timer = duration, minutes, seconds;
+                    setInterval(function ()
+                    {
+                        minutes = parseInt(timer / 60, 10);
+                        seconds = parseInt(timer % 60, 10);
+                        minutes = minutes < 10 ? "0" + minutes : minutes;
+                        seconds = seconds < 10 ? "0" + seconds : seconds;
+                        display.textContent = minutes + ":" + seconds;
+                        if(--timer < 0)
+                        {
+                          timer=duration;
+                          window.location.href="thankyou.html";
+                        }
+                    }, 1000);
+                }
+                window.onload = function()
+                {
+                    var tenMinutes = 60 * 3,
+                    display = document.querySelector('#timer');
+                    startTimer(tenMinutes, display);
+                };
+                </script>
+
+
+<p class = "questions"><span class="nc">Q1.</span> Which of the following is the extension of Notepad?</p>
+<input  type = "radio" id = "mc" name = "question1" value = ".txt"> .txt
+<input type = "radio" id = "mc" name = "question1" value = ".xls"> .xls
+<input type = "radio" id = "mc" name = "question1" value = ".ppt"> .ppt<br>
+<br />
+
+<p class = "questions"><span class="nc">Q2.</span> Which of these is a Search Engine?</p>
+<input type = "radio" id = "mc" name = "question2" value = "FTP"> FTP
+<input type = "radio" id = "mc" name = "question2" value = "Google"> Google
+<input type = "radio" id = "mc" name = "question2" value = "Archie"> Archie<br>
+<br />
+
+<p class = "questions"><span class="nc">Q3.</span> The Speed of your net access is defined in terms of:</p>
+<input type = "radio" id = "mc" name = "question3" value = "RAM"> RAM
+<input type = "radio" id = "mc" name = "question3" value = "MHz"> MHz
+<input type = "radio" id = "mc" name = "question3" value = "Kbps"> Kbps<br>
+<br />
+
+<p class = "questions"><span class="nc">Q4.</span> How many bits is a byte?</p>
+<input type = "radio" id = "mc" name = "question4" value = "4"> 4
+<input type = "radio" id = "mc" name = "question4" value = "8"> 8
+<input type = "radio" id = "mc" name = "question4" value = "16"> 16<br>
+<br />
+
+<p class = "questions"><span class="nc">Q5.</span> In which decade was the internet first implemented?</p>
+<input type = "radio" id = "mc" name = "question5" value = "1940s"> 1940s
+<input type = "radio" id = "mc" name = "question5" value = "1950s"> 1950s
+<input type = "radio" id = "mc" name = "question5" value = "1960s"> 1960s<br>
+<br />
+
+<hr width="100%" >
+
+<p class = "questions"><span class="nc">Q6.</span> Main circuit board in a computer is:</p>
+<input type = "radio" id = "mc" name = "question6" value = "Mother board"> Mother board
+<input type = "radio" id = "mc" name = "question6" value = "Highlight"> Highlight
+<input type = "radio" id = "mc" name = "question6" value = "Decoder"> Decoder<br>
+<br />
+
+<p class = "questions"><span class="nc">Q7.</span> Which company created the most used networking software in the 1980's</p>
+<input type = "radio" id = "mc" name = "question7" value = "IBM"> IBM
+<input type = "radio" id = "mc" name = "question7" value = "Sun"> Sun
+<input type = "radio" id = "mc" name = "question7" value = "Microsoft"> Microsoft<br>
+<br />
+
+<p class = "questions"><span class="nc">Q8.</span> Which of the following operating systems is produced by IBM?</p>
+<input type = "radio" id = "mc" name = "question8" value = "OS-2"> OS-2
+<input type = "radio" id = "mc" name = "question8" value = "DOS"> DOS
+<input type = "radio" id = "mc" name = "question8" value = "UNIX"> UNIX<br>
+<br />
+
+<p class = "questions"><span class="nc">Q9.</span> '.TMP' extension refers usually to what kind of file? </p>
+<input type = "radio" id = "mc" name = "question9" value = "Temporary file"> Temporary file
+<input type = "radio" id = "mc" name = "question9" value = "Image file"> Image file
+<input type = "radio" id = "mc" name = "question9" value = "Audio file"> Audio file<br>
+<br />
+
+<p class = "questions"><span class="nc">Q10.</span> '.Jpg' extension refers usually to what kind of file? </p>
+<input type = "radio" id = "mc" name = "question10" value = "Temporary file"> Temporary file
+<input type = "radio" id = "mc" name = "question10" value = "Image file"> Image file
+<input type = "radio" id = "mc" name = "question10" value = "System file"> System file<br>
+<br />
+
+<hr width="100%" >
+
+<p class = "questions"><span class="nc">Q11.</span> In which year was the "@" chosen for its use in e-mail addresses? </p>
+<input type = "radio" id = "mc" name = "question11" value = "1976"> 1976
+<input type = "radio" id = "mc" name = "question11" value = "1972"> 1972
+<input type = "radio" id = "mc" name = "question11" value = "1980"> 1980<br>
+<br />
+
+<p class = "questions"><span class="nc">Q12.</span> What was the first ARPANET message? </p>
+<input type = "radio" id = "mc" name = "question12" value = "lo"> lo
+<input type = "radio" id = "mc" name = "question12" value = "hello world"> hello world
+<input type = "radio" id = "mc" name = "question12" value = "frontier"> frontier<br>
+<br />
+
+<p class = "questions"><span class="nc">Q13.</span> 'DTP' computer abbreviation usually means? </p>
+<input type = "radio" id = "mc" name = "question13" value = "Digital Transmission Protocol"> Digital Transmission Protocol
+<input type = "radio" id = "mc" name = "question13" value = "Desk-top Publishing"> Desk-top Publishing
+<input type = "radio" id = "mc" name = "question13" value = "Data Type Programming"> Data Type Programming<br>
+<br />
+
+<p class = "questions"><span class="nc">Q14.</span> Compact discs hold how many minutes of music? </p>
+<input type = "radio" id = "mc" name = "question14" value = "74mins"> 74mins
+<input type = "radio" id = "mc" name = "question14" value = "56mins"> 56mins
+<input type = "radio" id = "mc" name = "question14" value = "60mins"> 60mins<br>
+<br />
+
+<p class = "questions"><span class="nc">Q15.</span> 'CD' computer abbreviation usually means? </p>
+<input type = "radio" id = "mc" name = "question15" value = "Command Description"> Command Description
+<input type = "radio" id = "mc" name = "question15" value = "Compact Disc"> Command Disc
+<input type = "radio" id = "mc" name = "question15" value = "Copy Density"> Copy Density<br>
+<br />
+
+<hr width="100%" >
+
+<p class = "questions"><span class="nc">Q16.</span> '.BAK' extension refers usually to what kind of file? </p>
+<input type = "radio" id = "mc" name = "question16" value = "Audio file"> Audio file
+<input type = "radio" id = "mc" name = "question16" value = "Movie file"> Movie file
+<input type = "radio" id = "mc" name = "question16" value = "Backup file"> Backup file<br>
+<br />
+
+<p class = "questions"><span class="nc">Q17.</span> Which is not a correct type of a computer? </p>
+<input type = "radio" id = "mc" name = "question17" value = "Super Computer"> Super Computer
+<input type = "radio" id = "mc" name = "question17" value = "Mini Frame Computer"> Mini Frame Computer
+<input type = "radio" id = "mc" name = "question17" value = "Workstations"> Workstations<br>
+<br />
+
+<p class = "questions"><span class="nc">Q18.</span> CRT belongs to? </p>
+<input type = "radio" id = "mc" name = "question18" value = "Printer"> Printer
+<input type = "radio" id = "mc" name = "question18" value = "Scanner"> Scanner
+<input type = "radio" id = "mc" name = "question18" value = "Monitor"> Monitor<br>
+<br />
+
+<p class = "questions"><span class="nc">Q19.</span> Why OMR is used? </p>
+<input type = "radio" id = "mc" name = "question19" value = "Scan documents"> Scan documents
+<input type = "radio" id = "mc" name = "question19" value = "Scan Answer Sheets"> Scan Answer Sheets
+<input type = "radio" id = "mc" name = "question19" value = "Scan images"> Scan images<br>
+<br />
+
+<p class = "questions"><span class="nc">Q20.</span> Joystick is __________? </p>
+<input type = "radio" id = "mc" name = "question20" value = "An input device"> An input device
+<input type = "radio" id = "mc" name = "question20" value = "An output device"> An output device
+<input type = "radio" id = "mc" name = "question20" value = "A memory unit"> A memory unit<br>
+<br/><br>
+
+
+<button type="button" onclick="calculateScore"> Calculate Score </button>
+
+<p id="score"></p>
+<button id="submit"><a href="thankyou.html">submit</a></button><br><br>
+<script src="script.js"></script>           
+</form>
+
+
+</div>
+
+    </div>
+             
+ </body>
+ </html>     

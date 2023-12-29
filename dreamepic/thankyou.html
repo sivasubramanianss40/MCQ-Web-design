@@ -1,0 +1,208 @@
+<html>
+    <head>
+        <title>thankyou</title>
+        <script>
+            function calculateScore()
+{
+    var form = document.getElementById("mcqForm");
+    var score = 0;
+
+    var q1Answer=form.elements["question1"].value;
+    if(q1Answer === ".txt")
+    {
+        score += 1;
+    }
+
+    var q2Answer=form.elements["question2"].value;
+    if(q2Answer === "Google")
+    {
+        score += 1;
+    }
+
+    var q3Answer=form.elements["question3"].value;
+    if(q3Answer === "Kbps")
+    {
+        score += 1;
+    }
+
+    var q4Answer=form.elements["question4"].value;
+    if(q4Answer === "8")
+    {
+        score += 1;
+    }
+
+    var q5Answer=form.elements["question5"].value;
+    if(q5Answer === "1940s")
+    {
+        score += 1;
+    }
+
+    var q6Answer=form.elements["question6"].value;
+    if(q6Answer === "Mother board")
+    {
+        score += 1;
+    }
+
+    var q7Answer=form.elements["question7"].value;
+    if(q7Answer === "IBM")
+    {
+        score += 1;
+    }
+
+    var q8Answer=form.elements["question8"].value;
+    if(q8Answer === "UNIX")
+    {
+        score += 1;
+    }
+
+    var q9Answer=form.elements["question9"].value;
+    if(q9Answer === "Temporary file")
+    {
+        score += 1;
+    }
+
+    var q10Answer=form.elements["question10"].value;
+    if(q10Answer === "Image file")
+    {
+        score += 1;
+    }
+
+    var q11Answer=form.elements["question11"].value;
+    if(q11Answer === "1972")
+    {
+        score += 1;
+    }
+
+    var q12Answer=form.elements["question12"].value;
+    if(q12Answer === "lo")
+    {
+        score += 1;
+    }
+
+    var q13Answer=form.elements["question13"].value;
+    if(q13Answer === "Desk-top Publishing")
+    {
+        score += 1;
+    }
+
+    var q14Answer=form.elements["question14"].value;
+    if(q14Answer === "74mins")
+    {
+        score += 1;
+    }
+
+    var q15Answer=form.elements["question15"].value;
+    if(q15Answer === "Command Disc")
+    {
+        score += 1;
+    }
+
+    var q16Answer=form.elements["question16"].value;
+    if(q16Answer === "Backup file")
+    {
+        score += 1;
+    }
+
+    var q17Answer=form.elements["question17"].value;
+    if(q17Answer === "Mini Frame Computer")
+    {
+        score += 1;
+    }
+
+    var q18Answer=form.elements["question18"].value;
+    if(q18Answer === "Monitor")
+    {
+        score += 1;
+    }
+
+    var q19Answer=form.elements["question19"].value;
+    if(q19Answer === "Scan Answer Sheets")
+    {
+        score += 1;
+    }
+
+    var q20Answer=form.elements["question20"].value;
+    if(q20Answer === "An input device")
+    {
+        score += 1;
+    }
+    document.getElementById("score").innerHTML = "score:" + score;
+
+}
+        </script>
+    </head>
+    <body>
+        <style>
+            body{
+                background: rgb(145, 193, 238);   
+            }
+            .maincontainer{
+                position: absolute;
+                width: 250px;
+                height: 320px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .thecard{
+                position: absolute;
+                width: 100%; 
+                height: 100%;
+                transform-style: preserve-3d;
+                transition: all 0.5s ease;
+                border-radius: 20px;
+                box-shadow: 1px 1px 20px 5px rgba(0, 0, 0, 0.685);
+            }
+            .thecard:hover{
+                transform: rotateY(180deg);
+                cursor: none;
+            }
+            .thefront{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                background: #0039a6;
+                color: white;
+                text-align: center;
+                border-radius: 20px;
+                font-weight: bold;
+            }
+            .theback{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                background: #0a2351;
+                color: white;  
+                transform: rotateY(180deg);
+                text-align: center;
+                border-radius: 20px;
+                font-weight: bold;
+            }
+            h2{
+                font-family: sans-serif;
+                align-items: center;
+                margin-top: 35%;
+            }
+        </style> 
+        
+        <div class="maincontainer">
+            <div class="thecard">
+                <div class="thefront">
+                    <h3>. . .</h3>
+                    <h2>Thank You!</h2><br/><br><br><br>
+                    <h3>. . .</h3>
+                </div>
+                <div class="theback">
+                    <h3>. . .</h3>
+                    <h2>Congratulations!</h2><br><br><br><br>
+                    <h3>. . .</h3>
+                </div>
+       
+            </div>
+            
+        </div>
+
+    </body>
+</html>
